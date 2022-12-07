@@ -1,8 +1,12 @@
+use hello::greet;
+
 #[allow(unused_variables)]
 #[allow(unused_assignments)]
 #[allow(dead_code)]
 fn main() {
     println!("Hello, world!");
+
+    greet();
 
     // Variables
     // Multiple assignments using destruct
