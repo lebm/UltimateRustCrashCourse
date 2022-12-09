@@ -2,4 +2,6 @@
 members = [
     "hello",
     "functions",
+    "control_flow",
+    "strings",
 ]
