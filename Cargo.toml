@@ -5,4 +5,5 @@ members = [
     "control_flow",
     "strings",
     "ownership",
+    "collection",
 ]
