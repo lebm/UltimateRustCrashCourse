@@ -14,4 +14,19 @@ fn main() {
     // Wrong; s1 was moved to s2
     //print!(s1);
     println!("{s2}");
+    let s3 = do_stuff(s2);
+    // Wrong: s2 was moved to the do_stuff function
+    // println!("{s2}");
+    print!("{s3}");
+    let ls3 = do_stuff2(&s3);
+    println!("{ls3}");
+}
+
+fn do_stuff(s: String) -> String {
+    s
+}
+
+fn do_stuff2(s: &String) -> usize {
+    // "." auto dereference when necessary. = (*s).len()
+    s.len()
 }
