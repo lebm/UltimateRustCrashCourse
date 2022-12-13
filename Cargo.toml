@@ -7,4 +7,5 @@ members = [
     "ownership",
     "collection",
     "enums",
+    "closures",
 ]
